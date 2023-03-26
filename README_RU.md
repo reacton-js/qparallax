@@ -4,7 +4,7 @@
 
 ![qparallax](https://raw.githubusercontent.com/reacton-js/qparallax/main/qparallax/logo.jpg)
 
-[GitHub](https://github.com/reacton-js/qparallax) | [NpmJS](https://www.npmjs.com/package/qparallax) | [Example](http://u92502bm.beget.tech/qparallax/)
+[GitHub](https://github.com/reacton-js/qparallax) | [NpmJS](https://www.npmjs.com/package/qparallax) | [Пример](http://u92502bm.beget.tech/qparallax/)
 
 ## qparallax
 
