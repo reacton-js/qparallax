@@ -1,0 +1,17 @@
+{
+  "name": "qparallax",
+  "version": "1.0.0",
+  "description": "Quick Parallax",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "parallax",
+    "quick",
+    "html",
+    "js"
+  ],
+  "author": "https://github.com/reacton-js",
+  "license": "MIT"
+}
