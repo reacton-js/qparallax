@@ -1,13 +1,16 @@
 'use strict'
 
 !function() {
+  // определить ссылку на элемент документа
+  const documentElement = document.documentElement
+  
   // устанавливает смещение нижнему слою параллакса
   function setOffset(qparallax, style, speed) {
     // определить начальную позицию параллакса
-    const start = Math.max(qparallax.offsetTop - window.innerHeight, 0)
+    const start = Math.max(qparallax.offsetTop - documentElement.clientHeight, 0)
 
     // определить относительное смещение параллакса
-    const relative = start > window.innerHeight ? window.innerHeight : qparallax.offsetTop
+    const relative = start > documentElement.clientHeight ? documentElement.clientHeight : qparallax.offsetTop
 
     // определить конечную позицию параллакса
     const end = start + relative + qparallax.offsetHeight
