@@ -37,14 +37,12 @@
 <body>
 
   <section class="qparallax">
-    <!-- всегда идёт первым -->
-    <div class="qparallax__lower">
-      <img src="img/gradient.jpg" alt="gradient">
-    </div>
-    <!-- всегда идёт вторым -->
     <div class="qparallax__upper">
       <h2>Lorem ipsum dolor amet consectetur adipisicing</h2>
       <button>More...</button>
+    </div>
+    <div class="qparallax__lower">
+      <img src="img/gradient.jpg" alt="gradient">
     </div>
   </section>
   
@@ -68,8 +66,8 @@
 
 Блок «qparallax» принимает единственный атрибут ***data-speed***, который изменяет скорость параллакса. Чем выше это значение, тем более выраженным окажется эффект.
 
-По умолчанию это значение равно 2, но его всегда можно изменить:
+По умолчанию это значение равно 3, но его всегда можно изменить:
 
 ```html
-<section class="qparallax" data-speed="3">
+<section class="qparallax" data-speed="5">
 ```

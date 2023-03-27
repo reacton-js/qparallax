@@ -37,14 +37,12 @@ Quick Parallax
 <body>
 
   <section class="qparallax">
-    <!-- always comes first -->
-    <div class="qparallax__lower">
-      <img src="img/gradient.jpg" alt="gradient">
-    </div>
-    <!-- always comes second -->
     <div class="qparallax__upper">
       <h2>Lorem ipsum dolor amet consectetur adipisicing</h2>
       <button>More...</button>
+    </div>
+    <div class="qparallax__lower">
+      <img src="img/gradient.jpg" alt="gradient">
     </div>
   </section>
   
@@ -68,8 +66,8 @@ The **--indent** variable from the *qparallax.css* file defines the top and bott
 
 The «qparallax» block accepts a single attribute ***data-speed*** which changes the parallax speed. The higher this value, the more pronounced the effect will be.
 
-By default, this value is 2, but you can always change it:
+By default, this value is 3, but you can always change it:
 
 ```html
-<section class="qparallax" data-speed="3">
+<section class="qparallax" data-speed="5">
 ```

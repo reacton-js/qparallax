@@ -1,1 +1,1 @@
-.qparallax{--indent:200px;padding:0;clip-path:inset(0)}.qparallax__lower{--offset:0;position:fixed;z-index:-1;left:50%;transform:translate(-50%,calc(var(--offset) * -1px))}.qparallax__upper{padding:var(--indent) 20px;text-align:center}
+.qparallax{--indent:200px;overflow:hidden;position:relative}.qparallax__upper{padding:var(--indent) 20px;text-align:center}.qparallax__lower{--offset:0;position:absolute;z-index:-1;top:0;left:50%;bottom:0;transform:translate(-50%,calc(var(--offset) * -1px))}
