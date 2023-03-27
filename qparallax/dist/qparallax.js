@@ -10,7 +10,7 @@
     const start = Math.max(qparallax.offsetTop - documentElement.clientHeight, 0)
 
     // определить относительное смещение параллакса
-    const relative = start > documentElement.clientHeight ? documentElement.clientHeight : qparallax.offsetTop
+    const relative = start >= documentElement.clientHeight ? documentElement.clientHeight : qparallax.offsetTop - start
 
     // определить конечную позицию параллакса
     const end = start + relative + qparallax.offsetHeight
