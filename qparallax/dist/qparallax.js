@@ -1,6 +1,24 @@
 'use strict'
 
 !function() {
+  // устанавливает смещение нижнему слою параллакса
+  function setOffset(qparallax, style, speed) {
+    // определить начальную позицию параллакса
+    const start = Math.max(qparallax.offsetTop - window.innerHeight, 0)
+
+    // определить относительное смещение параллакса
+    const relative = start > window.innerHeight ? window.innerHeight : qparallax.offsetTop
+
+    // определить конечную позицию параллакса
+    const end = start + relative + qparallax.offsetHeight
+
+    // если скролл находится в промежутке между начальной и конечной позицией параллакса
+    if (window.scrollY >= start && window.scrollY <= end) {
+      // установить смещение нижнему слою параллакса
+      style.setProperty('--offset', (window.scrollY - start) / 10 * speed)
+    }
+  }
+
   // определить хранилище обратных вызовов
   const callbacks = new Set()
 
@@ -13,22 +31,7 @@
     const style = qparallax.querySelector('.qparallax__lower').style
 
     // добавить обратный вызов в хранилище
-    callbacks.add(() => {
-      // определить начальную позицию параллакса
-      const start = Math.max(qparallax.offsetTop - window.innerHeight, 0)
-
-      // определить относительное смещение параллакса
-      const offset = start > window.innerHeight ? window.innerHeight : qparallax.offsetTop
-
-      // определить конечную позицию параллакса
-      const end = start + offset + qparallax.offsetHeight
-
-      // если скролл находится в промежутке между начальной и конечной позицией параллакса
-      if (window.scrollY >= start && window.scrollY <= end) {
-        // добавить смещение нижнему слою параллакса
-        style.setProperty('--offset', (window.scrollY - start) / 10 * speed)
-      }
-    })
+    callbacks.add(() => setOffset(qparallax, style, speed))
   }
 
   // определить датчик выполнения
