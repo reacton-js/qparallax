@@ -1,6 +1,6 @@
 {
   "name": "qparallax",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Quick Parallax",
   "main": "index.js",
   "scripts": {

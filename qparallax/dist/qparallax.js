@@ -9,11 +9,11 @@
     // определить начальную позицию параллакса
     const start = Math.max(qparallax.offsetTop - documentElement.clientHeight, 0)
 
-    // определить относительное смещение параллакса
-    const relative = start >= documentElement.clientHeight ? documentElement.clientHeight : qparallax.offsetTop - start
+    // определить высоту видимого пространства
+    const view = start >= documentElement.clientHeight ? documentElement.clientHeight : qparallax.offsetTop - start
 
     // определить конечную позицию параллакса
-    const end = start + relative + qparallax.offsetHeight
+    const end = start + view + qparallax.offsetHeight
 
     // если скролл находится в промежутке между начальной и конечной позицией параллакса
     if (window.scrollY >= start && window.scrollY <= end) {
