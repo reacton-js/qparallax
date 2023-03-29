@@ -71,3 +71,27 @@ By default, this value is 3, but you can always change it:
 ```html
 <section class="qparallax" data-speed="5">
 ```
+
+<br>
+
+By default, parallax goes to the top of the page. To set the direction to the bottom of the page, add the class "qparallax--b" to the «qparallax» block:
+
+```html
+<section class="qparallax qparallax--b">
+```
+
+<br>
+
+To create horizontal parallax, add the class "qparallax--h" to the «qparallax» block:
+
+```html
+<section class="qparallax qparallax--h">
+```
+
+<br>
+
+By default, the horizontal parallax goes to the left. To set the direction to the right, add the class "qparallax--hr" to the «qparallax» block:
+
+```html
+<section class="qparallax qparallax--hr">
+```

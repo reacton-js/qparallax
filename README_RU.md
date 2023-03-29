@@ -71,3 +71,27 @@
 ```html
 <section class="qparallax" data-speed="5">
 ```
+
+<br>
+
+По умолчанию, параллакс идёт к верху страницы. Чтобы задать направление к низу страницы, добавьте блоку «qparallax» класс "qparallax--b":
+
+```html
+<section class="qparallax qparallax--b">
+```
+
+<br>
+
+Для создания горизонтального параллакса, добавьте блоку «qparallax» класс "qparallax--h":
+
+```html
+<section class="qparallax qparallax--h">
+```
+
+<br>
+
+По умолчанию, горизонтальный параллакс идёт в левую сторону. Чтобы задать направление в правую сторону, добавьте блоку «qparallax» класс "qparallax--hr":
+
+```html
+<section class="qparallax qparallax--hr">
+```
