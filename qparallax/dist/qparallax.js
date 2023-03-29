@@ -44,14 +44,16 @@
   window.addEventListener('scroll', () => {
     // если датчик включен
     if (teak) {
+      window.requestAnimationFrame(() => {
+        // выполнить обратные вызовы всех параллаксов
+        callbacks.forEach(cb => cb())
+
+        // включить датчик
+        teak = true
+      })
+
       // выключить датчик
       teak = false
-
-      // выполнить обратные вызовы всех параллаксов
-      callbacks.forEach(cb => cb())
-
-      // включить датчик
-      teak = true
     }
   })
 }()
