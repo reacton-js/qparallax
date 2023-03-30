@@ -2,7 +2,7 @@
 
 [EN](https://github.com/reacton-js/qparallax/blob/main/README.md) / [RU](https://github.com/reacton-js/qparallax/blob/main/README_RU.md)
 
-![qparallax](https://raw.githubusercontent.com/reacton-js/qparallax/main/qparallax/logo.jpg)
+![qparallax](https://raw.githubusercontent.com/reacton-js/qparallax/main/logo.jpg)
 
 [GitHub](https://github.com/reacton-js/qparallax) | [NpmJS](https://www.npmjs.com/package/qparallax) | [Example](http://u92502bm.beget.tech/qparallax/)
 
@@ -36,7 +36,7 @@ Quick Parallax
 </head>
 <body>
 
-  <section class="qparallax">
+  <div class="qparallax">
     <div class="qparallax__upper">
       <h2>Lorem ipsum dolor amet consectetur adipisicing</h2>
       <button>More...</button>
@@ -44,7 +44,7 @@ Quick Parallax
     <div class="qparallax__lower">
       <img src="img/gradient.jpg" alt="gradient">
     </div>
-  </section>
+  </div>
   
   <script src="qparallax.min.js"></script>
 </body>
@@ -69,7 +69,7 @@ The «qparallax» block accepts a single attribute ***data-speed*** which change
 By default, this value is 3, but you can always change it:
 
 ```html
-<section class="qparallax" data-speed="5">
+<div class="qparallax" data-speed="5">
 ```
 
 <br>
@@ -77,7 +77,7 @@ By default, this value is 3, but you can always change it:
 By default, parallax goes to the top of the page. To set the direction to the bottom of the page, add the class "qparallax--b" to the «qparallax» block:
 
 ```html
-<section class="qparallax qparallax--b">
+<div class="qparallax qparallax--b">
 ```
 
 <br>
@@ -85,7 +85,7 @@ By default, parallax goes to the top of the page. To set the direction to the bo
 To create horizontal parallax, add the class "qparallax--h" to the «qparallax» block:
 
 ```html
-<section class="qparallax qparallax--h">
+<div class="qparallax qparallax--h">
 ```
 
 <br>
@@ -93,5 +93,5 @@ To create horizontal parallax, add the class "qparallax--h" to the «qparallax»
 By default, the horizontal parallax goes to the left. To set the direction to the right, add the class "qparallax--hr" to the «qparallax» block:
 
 ```html
-<section class="qparallax qparallax--hr">
+<div class="qparallax qparallax--hr">
 ```

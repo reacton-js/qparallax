@@ -1,7 +1,6 @@
-*.log
+.gitignore
 command.txt
+gulpfile.js
 /package.json
-qparallax/README.md
-qparallax/README_RU.md
 node_modules/
 src/
