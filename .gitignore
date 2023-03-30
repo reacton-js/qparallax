@@ -3,4 +3,5 @@ gulpfile.js
 /package.json
 node_modules/
 dist/*.md
+dist/logo.jpg
 src/
