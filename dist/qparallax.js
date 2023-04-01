@@ -1,5 +1,5 @@
 /*!
- * qparallax.js v1.0.6
+ * qparallax.js v1.0.7
  * (c) 2022-2023 | github.com/reacton-js
  * Released under the MIT License.
  */
@@ -41,24 +41,7 @@
     // добавить обратный вызов в хранилище
     callbacks.add(() => setOffset(qparallax, style, speed))
   }
-
-  // определить датчик выполнения
-  let teak = true
-
+  
   // при прокрутке окна, вызвать обратные вызовы из хранилища
-  window.addEventListener('scroll', () => {
-    // если датчик включен
-    if (teak) {
-      window.requestAnimationFrame(() => {
-        // выполнить обратные вызовы всех параллаксов
-        callbacks.forEach(cb => cb())
-
-        // включить датчик
-        teak = true
-      })
-
-      // выключить датчик
-      teak = false
-    }
-  })
+  window.addEventListener('scroll', () => callbacks.forEach(cb => cb()))
 }()

@@ -1,5 +1,5 @@
 /*!
- * qparallax.js v1.0.6
+ * qparallax.js v1.0.7
  * (c) 2022-2023 | github.com/reacton-js
  * Released under the MIT License.
  */.qparallax{--indent:200px;overflow:hidden;position:relative}.qparallax__upper{padding:var(--indent) 20px;text-align:center}.qparallax__lower{--offset:0;position:absolute;z-index:-1;top:0;left:50%;transform:translate(-50%,calc(var(--offset) * -1px))}.qparallax--b .qparallax__lower{top:auto;bottom:0;transform:translate(-50%,calc(var(--offset) * 1px))}.qparallax--h .qparallax__lower{left:0;transform:translateX(calc(var(--offset) * -1px))}.qparallax--hr .qparallax__lower{left:auto;right:0;transform:translateX(calc(var(--offset) * 1px))}
